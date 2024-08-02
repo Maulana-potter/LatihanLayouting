@@ -1,0 +1,273 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* main */
+body {
+  background-color: rgb(11, 9, 36);
+  font: 16px/20px arial;
+}
+.topbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 40px;
+  background-color: rgb(134, 118, 224);
+  z-index: 9999;
+}
+.main {
+  margin: 50px auto;
+  width: 960px;
+  background-color: rgb(85, 85, 170);
+  position: relative;
+}
+
+.twitter {
+  width: 200px;
+  height: 200px;
+  background-image: url(111.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  text-indent: -9999px;
+  top: -22px;
+  right: -27px;
+}
+
+.header {
+  padding: 20px;
+}
+.header .judul {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header ul li {
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 20px;
+}
+.header a {
+  text-decoration: none;
+  color: aquamarine;
+  padding: 3px;
+}
+.header a:hover {
+  color: white;
+  background-color: aqua;
+}
+.gambar {
+  background-image: url(4.jpg);
+  height: 350px;
+  background-size: cover;
+  background-position: 0 -150px;
+  border-top: 3px solid aquamarine;
+  border-bottom: 3px solid salmon;
+}
+
+.container {
+}
+.content {
+  padding: 20px;
+  width: 600px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.content h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.content .penulis {
+  font-size: 11px;
+  margin-top: -3px;
+}
+.content a {
+  text-decoration: none;
+  color: aquamarine;
+  padding: 2px;
+}
+
+.content a:hover {
+  background-color: aquamarine;
+  color: white;
+}
+
+.content p {
+  font-size: 14px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.sidebar {
+  width: 300px;
+  float: right;
+  padding: 20px;
+}
+.sidebar h3 {
+  font-weight: bold;
+}
+
+.sidebar img {
+  width: 80px;
+  height: 80px;
+  margin-top: 5px;
+  float: left;
+  padding-right: 10px;
+}
+
+.sidebar p {
+  font: 13px/16px arial;
+  text-align: justify;
+}
+
+.footer {
+  background-color: rgb(21, 21, 78);
+  padding: 10px;
+}
+.footer .copyright {
+  text-align: center;
+  font-size: 11px;
+}
+
+/* clear */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
